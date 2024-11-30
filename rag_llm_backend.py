@@ -7,7 +7,7 @@ from langchain.text_splitter import MarkdownTextSplitter
 from langchain_openai import ChatOpenAI
 
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "to be implemented"
 markdown_directory = r"C:\Users\gaura\PycharmProjects\Tax Agents Chatbot\md files test"
 print("Hello World")
 markdown_files = [
@@ -36,10 +36,6 @@ llm = ChatOpenAI(
     max_tokens=None,
     timeout=None,
     max_retries=2,
-    # api_key="...",  # if you prefer to pass api key in directly instaed of using env vars
-    # base_url="...",
-    # organization="...",
-    # other params...
 )
 def rag(user_question):
     retrieved_docs = retriever.get_relevant_documents(user_question)
